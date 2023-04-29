@@ -1,0 +1,75 @@
+.wrapper {
+  position: relative;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  position: relative;
+}
+
+.date {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  cursor: pointer;
+  justify-content: center;
+
+  &__text {
+    color: #002cfb;
+    font-size: 1.4rem;
+    cursor: pointer;
+  }
+
+  &:hover .calendar {
+    filter: invert(13%) sepia(82%) saturate(6398%) hue-rotate(234deg) brightness(90%) contrast(120%);
+  }
+}
+
+.arrow {
+  background-color: transparent;
+}
+
+.menu {
+  position: absolute;
+  z-index: 10;
+  top: 25px;
+  right: 0;
+  border: 1px solid rgba(234, 240, 250, 1);
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0px 0px 26px rgba(233, 237, 243, 0.8);
+  width: 20.4rem;
+  cursor: pointer;
+
+  &__item {
+    padding: 6px 0 6px 20px;
+    text-align: start;
+    color: rgba(137, 156, 177, 1);
+    font-size: 1.4rem;
+    line-height: 28px;
+
+    &:hover {
+      background: rgb(0, 44, 251, 0.13);
+      color: rgba(18, 41, 69, 1);
+    }
+  }
+}
+
+.active {
+  color: #002cfb;
+}
+
+.arrow {
+  filter: invert(80%) sepia(26%) saturate(268%) hue-rotate(181deg) brightness(88%) contrast(100%);
+  transition: all 0.3s;
+  &:hover {
+    filter: invert(13%) sepia(82%) saturate(6398%) hue-rotate(234deg) brightness(90%) contrast(120%);
+  }
+}
+
+.calendar {
+  filter: invert(80%) sepia(26%) saturate(268%) hue-rotate(181deg) brightness(88%) contrast(100%);
+  transition: all 0.3s;
+}

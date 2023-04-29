@@ -1,0 +1,76 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 0.7rem;
+  max-width: 1440px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  color: #5e7793;
+  font-size: 1.4rem;
+  font-family: inherit;
+  margin-left: -0.8rem;
+}
+
+.filter {
+  &__wrapper {
+    display: flex;
+    gap: 2.6rem;
+    margin-right: -0.5rem;
+  }
+}
+
+.btn {
+  display: flex;
+  background-color: transparent;
+  font-family: inherit;
+  align-items: center;
+  font-size: 1.4rem;
+  color: #5e7793;
+  gap: 0.4rem;
+}
+
+.type {
+  position: relative;
+}
+
+.menu {
+  position: absolute;
+  z-index: 10;
+  top: 35px;
+  right: 0;
+  border: 1px solid rgba(234, 240, 250, 1);
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0px 0px 26px rgba(233, 237, 243, 0.8);
+  width: 20.4rem;
+
+  &__item {
+    padding: 6px 0 6px 20px;
+    text-align: start;
+    color: rgba(137, 156, 177, 1);
+    font-size: 1.4rem;
+    line-height: 28px;
+
+    &:hover {
+      background: rgb(0, 44, 251, 0.13);
+      color: rgba(18, 41, 69, 1);
+    }
+  }
+}
+
+.active {
+  color: #002cfb;
+}
+
+.arrow {
+  filter: invert(81%) sepia(29%) saturate(551%) hue-rotate(188deg) brightness(93%) contrast(87%);
+  transition: all 0.3s;
+  &:hover {
+    filter: invert(12%) sepia(99%) saturate(6085%) hue-rotate(234deg) brightness(91%) contrast(119%);
+  }
+}

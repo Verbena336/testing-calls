@@ -1,0 +1,22 @@
+.wrapper {
+  flex-grow: 1;
+  min-height: 100vh;
+}
+
+.main {
+  padding: 2rem 12rem 54.6rem 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: fit-content;
+  min-height: calc(100vh - 6.4rem);
+}
+
+.balance {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 4.8rem;
+  margin-bottom: 2rem;
+  max-width: 1440px;
+}

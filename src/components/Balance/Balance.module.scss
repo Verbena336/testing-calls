@@ -1,0 +1,21 @@
+.balance {
+  background-color: #ffffff;
+  border-radius: 4.8rem;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #899cb1;
+  font-family: inherit;
+  font-size: 1.4rem;
+
+  &__value {
+    color: #122945;
+    font-weight: 500;
+  }
+
+  &__image {
+    filter: invert(20%) sepia(61%) saturate(5611%) hue-rotate(214deg) brightness(102%)
+      contrast(100%);
+  }
+}

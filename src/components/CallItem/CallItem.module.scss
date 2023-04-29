@@ -1,0 +1,91 @@
+.wrapper {
+  border-bottom: 1px solid rgba(212, 223, 243, 0.17);
+  color: #122945;
+  font-size: 1.5rem;
+  min-height: 6.6rem;
+  & td {
+    padding: 17.7px 0;
+  }
+}
+
+.image {
+  width: 3.2rem;
+}
+
+.duration {
+  text-align: right;
+}
+
+.callImage {
+  width: 2.4rem;
+}
+
+.audio {
+  &__wrapper {
+    width: 35.2rem;
+    background-color: #eaf0fa;
+    border-radius: 48px;
+    display: flex;
+    gap: 12px;
+    padding: 1.2rem 0 1.2rem 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+}
+
+td.audio {
+  padding: 8px 0;
+  display: flex;
+  justify-content: end;
+}
+
+.playBtn {
+  width: 2.4rem;
+  height: 2.4rem;
+  background-image: url('../../../public/assets/icons/play.svg');
+  background-repeat: no-repeat;
+}
+
+.range {
+  width: 16.4rem;
+  background-color: #adbfdf;
+  border-radius: 50px;
+  height: 0.4rem;
+  &__fill {
+    background-color: #005ff8;
+    width: 0;
+    height: 100%;
+    border-radius: 50px;
+  }
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.download {
+  width: 2.4rem;
+  height: 2.4rem;
+  background-image: url('../../../public/assets/icons/download.svg');
+  background-repeat: no-repeat;
+}
+
+.close {
+  width: 2.4rem;
+  height: 2.4rem;
+  background-image: url('../../../public/assets/icons/close.svg');
+  background-repeat: no-repeat;
+}
+
+.download,
+.close {
+  filter: invert(75%) sepia(17%) saturate(414%) hue-rotate(180deg) brightness(99%) contrast(92%);
+  transition: all 0.3s;
+  cursor: pointer;
+  &:hover {
+    filter: invert(11%) sepia(99%) saturate(6668%) hue-rotate(236deg) brightness(92%) contrast(115%);
+  }
+}
